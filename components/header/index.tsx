@@ -47,17 +47,11 @@ export default function Header() {
   ];
 
   return (
-    <div style={{ display: 'flex', gap: '20px' }}>
-      <Link href={`/${urlSegments[0]}`}>
-        {/* <Link href={`/`}> */}
-        <img
-          src={'/logo.png'}
-          alt="인스타 스토리 뷰 로고"
-          width={161}
-          height={41}
-        />
-      </Link>
-      <ChangeLocale />
-    </div>
+    <s.HeaderContainer>
+      <s.HeaderBox>
+        <img src={`https://picsum.photos/73/30`} alt="로고 이미지" />
+        <input placeholder="인풋영역" />
+      </s.HeaderBox>
+    </s.HeaderContainer>
   );
 }
